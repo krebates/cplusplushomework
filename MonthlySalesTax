@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+  
+  string month;
+  int year;
+  double totalSales;
+  
+  cout << "-----------------------------------------------------------------------------" << endl;
+  cout << "This company must file a monthly sales tax report listing the sales" << endl;
+  cout << "from the month and the amount of sales collected." << endl;
+  cout << "Please input data when asked to find the monthly sales tax. Thanks." << endl;
+  cout << "-----------------------------------------------------------------------------" << endl;
+  
+  cout << "Please enter the month of sales. ";
+  cin >> month;
+  cout << "Please enter the year of sales. ";
+  cin >> year;
+  cout << "Please enter the total register sales collected. ";
+  cin >> totalSales;
+
+  cout << "" << endl;
+  cout << "For " << month << ", " << year << endl;
+  cout << "-------------------------------------------------" << endl;
+  cout << "Total Collected               $ " <<  setprecision(2) << fixed << totalSales << endl;
+  cout << "Sales                         $ " << totalSales * 0.94 << endl;
+  cout << "County Sales Tax              $ " << totalSales * 0.04 << endl;
+  cout << "State Sales Tax               $ " << totalSales * 0.02 << endl;
+  cout << "Total Sales Tax               $ " << totalSales * 0.06 << endl;
+// cout << "" << endl;
+// cout << "Please any key to continue . . ." << endl;
+}
