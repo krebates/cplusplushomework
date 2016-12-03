@@ -1,3 +1,9 @@
+/*The following table lists the freezing and boiling points of several substances. Write a program that asks the user 
+to enter the temperature, and then shows all the substances that will freeze at the temperature and all that will 
+boil at that temperature. For example, if the user enters -20 the program should report that water will freeze and 
+oxygen will boil at the temperature also the elements that have no change.*/
+
+
 #include <iostream>
 #include <string>
 using namespace std;
